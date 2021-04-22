@@ -13,9 +13,11 @@ John learned that a string C of length L consisting of uppercase English charact
 
 For example, the strings ABC and ADF are strictly increasing, however the strings ACC and FDA are not.
 
-Now that he taught you this new exciting property, John decided to challenge you: given a string S of length N, you have to find out, for every position 1≤i≤N, what is the length of the longest strictly increasing substring that ends at position i.
+Now that he taught you this new exciting property, John decided to challenge you: given a string S of length N, you have to find out, for every position 1≤i≤N, what is the length of the longest strictly increasing substring that ends at position I.
 
-Input
+
+# Input
+
 The first line of the input gives the number of test cases, T. T test cases follow.
 
 Each test case consists of two lines.
@@ -24,7 +26,8 @@ The first line contains an integer N, representing the length of the string.
 
 The second line contains a string S of length N, consisting of uppercase English characters.
 
-Output
+# Output
+
 For each test case, output one line containing Case #x: y1 y2 ... yn, where x is the test case number (starting from 1) and yi is the length of the longest strictly increasing substring that ends at position i.
 
 Limits
@@ -36,28 +39,28 @@ Time limit: 20 seconds.
 Test Set 2
 Time limit: 40 seconds.
 1≤N≤2×105.
-Sample
-Sample Input
-save_alt
-content_copy
+
+# Sample
+## Sample Input
+
 2
 4
+
 ABBC
+
 6
+
 ABACDA
 
 
-Sample Output
-
+## Sample Output
 
 Case #1: 1 2 1 2
+
+
 Case #2: 1 2 1 2 3 1
 
 
 In Sample Case #1, the longest strictly increasing substring ending at position 1 is A. The longest strictly increasing substrings ending at positions 2, 3 and 4 are AB, B and BC, respectively.
 
 In Sample Case #2, the longest strictly increasing substrings for each position are A, AB, A, AC, ACD and A.
-
-  
-Syntax pre-check
-Test run mode
