@@ -2,33 +2,43 @@
 using namespace std;
 int main()
 {
-    int t;
-    cin>>t;
-    for(int i=0;i<t;i++)
-    {
-        int n;
-        cin>>n;
-        vector<int>v;
-        for(int i=0;i<n;i++)
-        {
-            int p;
-            cin>>p;
-            v.push_back(p);
-
-        }
-        int count =0;
-        int max=-1;
-        for(int j=0;j<n;j++)
-        {
-            if(v[j]>max)
-            {
-                max=v[j];
-                if(i==n-1 || v[j]>v[j+1])
-                {
-                    count++;
-                }
-            }
-        }
-        cout<<"Case #"<<j<<": "<<count<<endl;
-    }
+	int t;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+		int n;
+		int c=0;
+		cin>>n;
+		vector<char>s;
+		for(int j=0;j<n;j++)
+		{
+		    char p;
+		    cin>>p;
+		    s.push_back(p);
+		}
+		cout<<"Case #"<<i+1<<": ";
+		for(int j=0;j<n;j++)
+		{
+			vector<int>count;
+			if(s[j]<s[j+1])
+			{
+			  	c++;
+			    count.push_back(c);
+			}
+			else
+			{
+			   	c++;
+			   	count.push_back(c);
+			   	c=0;
+			}
+			for(int k=0;k<count.size();k++)
+			{
+				cout<<count[k]<<" ";
+			}
+			
+		}
+		cout<<endl;
+	}
+	
+	return 0;
 }
